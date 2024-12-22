@@ -1,0 +1,64 @@
+ <!-- shw -- sem clone irmao, codigo se encontra aqui https://github.com/shwsrc -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>suspect</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Faculta+MF+Black&display=swap" rel="stylesheet">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Overlay inicial -->
+  <div class="overlay" id="overlay">
+    <button class="reveal-btn" id="revealBtn">click</button>
+  </div>
+
+  <!-- Vídeo de fundo -->
+  <video id="video" class="background-video hidden-video" src="./image/suspect4.mp4" loop muted autoplay playsinline webkit-playsinline>
+    <!-- Vídeo de fundo -->
+  </video>
+
+  <!-- Card do perfil -->
+  <div class="card-container hidden" id="cardContainer">
+    <div class="card">
+      <!-- Fundo pixelado -->
+      <div class="pixel-art">
+        <img src="image/suspect3.jpg" alt="Pixel Art" class="banner">
+        <img src="image/suspect1.png" alt="Profile Picture" class="profile-picture">
+      </div>
+      
+      <!-- Informações do perfil -->
+      <div class="profile-header">
+        <h2>sh</h2>
+        <p class="about-me">reactjs ~ css ~ node<br>chile / 19</p>
+      </div>
+
+      <!-- Ícones de habilidades -->
+      <div class="skills">
+        <span class="skill-icon">&lt;/&gt;</span>
+        <span class="skill-icon">🔺</span>
+        <span class="skill-icon">🛡️</span>
+      </div>
+
+      <!-- Conexões com ícones -->
+      <div class="connections">
+        <a href="https://github.com" class="connection-btn github" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://discord.com" class="connection-btn discord" target="_blank">
+          <i class="fab fa-discord"></i> Discord
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elemento de áudio (oculto) -->
+  <audio id="backgroundAudio" src="image/suspect5.mp3"></audio>
+
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
